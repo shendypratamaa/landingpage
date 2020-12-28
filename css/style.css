@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+body {
+    background: rgb(133, 133, 133);
+}
+
+.nav {
+    background: #fff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.brand {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.brand, 
+a ,
+.cta {
+    text-transform: uppercase;
+}
+
+.navbar a {
+    margin-left: 30px;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.cta {
+    display: inline-block;
+    background: #262626;
+    color: #fff;
+    padding: 8px;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.cta:hover {
+    opacity: 0.8;
+}
+
+/* section Satu */
+.satu {
+    display: grid;
+    grid-template-columns: 1fr 1.30fr;
+    width: 100%;
+}
+
+.contentLeft {
+    background: #262626;
+    display: flex;
+    min-height: 500px;
+    align-items: center;
+}
+
+.contentLeft__description {
+    border-left: 2px solid pink;
+    padding: 100px;
+}
+
+.contentLeft__description p, 
+.contentLeft__description a {
+    color: white;
+    margin: 10px 0;
+}
+
+.contentLeft__description a {
+    font-size: 10px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.contentLeft__description a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.contentLeft__description p {
+    font-size: 12px;
+    font-weight: 200;
+    padding-bottom: 50px;
+}
+
+.contentRight {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.contentLeft h2 {
+    color: white;
+    text-transform: uppercase;
+    width: 300px;
+    font-weight: 300;
+}
+
+/* section dua */
+.dua {
+    display: grid;
+    grid-template-columns: 1.30fr 1fr;
+    width: 100%;
+    height: 400px;
+}
+
+.contentDuaLeft {
+    background-size: cover;
+    background-position: center;
+}
+
+.contentDuaRight {
+    background: burlywood;
+    justify-content: center;
+    padding: 100px;
+    color: #262626;
+}
+
+.contentDuaRight h2,
+.contentDuaRight p,
+.contentDuaRight a {
+    color: #fff;
+    margin: 5px;
+}
+
+.contentDuaRight h2 {
+    font-size: 30px;
+    font-weight: 300;
+    width: 250px;
+}
+
+.contentDuaRight p {
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+
+.contentDuaRight a {
+    font-size: 10px;
+    padding-bottom: 2px;
+}
+
+.contentDuaRight a:hover {
+    border-bottom: 1px solid #262626;
+}
+
+/* Section Tiga */
+.tiga {
+    display: grid;
+    grid-template-columns: 1fr 1.30fr;
+    width: 100%;
+    height: 400px;
+}
+
+.contentTigaLeft {
+    background: #262626;
+    padding: 100px;
+    color: #fff;
+}
+
+.contentTigaLeft h2,
+.contentTigaLeft p ,
+.contentTigaLeft a{
+    margin: 5px;
+}
+
+.contentTigaLeft h2 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.contentTigaLeft p {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.contentTigaLeft a {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 100;
+    padding-bottom: 2px;
+}
+
+.contentTigaLeft a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.contentTigaRight {
+    background-position: center;
+    background-size: cover;
+}
+
+/* card */
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+}
+
+.cardsSatu,.cardsDua,.cardsTiga, .cardsEmpat {
+    padding: 50px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    font-weight: 12px;
+    color: #fff;
+    justify-content: flex-end;
+    text-shadow: 2px 5px 50px  #262626;
+} 
+
+.cards a {
+    color: #fff;
+    padding-top: 10px;
+}
+
+.cards p {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+/* items */
+
+.items {
+    background: #fff;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    color: #262626;
+    height: 400px;
+}
+
+.itemSatu, .itemDua, .itemTiga {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemSatu h2, .itemDua h2, .itemTiga h2 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+
+.itemSatu p, .itemDua p, .itemTiga  {
+    font-size: 13px;
+    text-align: center;
+}
+
+.itm a {
+    font-size: 80px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+}
+
+
+.innerfooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #262626;
+    position: relative;
+}
+
+.innerfooter h2 {
+    padding: 20px 0 0 50px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.innerfooter,
+.innerfooter li,
+.innerfooter a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    text-transform:capitalize !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+.innerfooter ul.listLeft {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    left: 48px;
+}
+
+.listLeft li {
+    margin-left: 15px;
+}
+
+.innerfooter ul.listCenter {
+    flex: 1;
+    padding-left: 300px;
+}
+
+.listCenter {
+    font-size: 15px;
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.listRight li {
+    margin: 0 0 30px 0;
+    padding: 0 0 50px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    font-weight: 100;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.listLeft a {
+    padding-bottom: 2px;
+}
+
+.listLeft a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.listCenter a {
+    padding-bottom: 2px;
+}
+
+.listCenter a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.listRight a:hover {
+    opacity: 0.8;
+}   
