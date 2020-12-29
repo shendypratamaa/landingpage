@@ -50,7 +50,7 @@ table {
 /* css reset */
 
 html {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -62,12 +62,18 @@ body {
     background: rgb(133, 133, 133);
 }
 
+img {
+    width: 100%;
+}
+
+/* main navigation
+========================== */
 .nav {
     background: #fff;
     padding: 20px;
 }
 
-.container {
+.nav__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,33 +82,32 @@ body {
     margin: 0 auto; 
 }
 
-.brand {
+.nav__brand {
     font-size: 20px;
     margin-left: 30px;
     cursor: pointer;
     font-size: 25px;
 }
 
-.brand, 
-a ,
-.cta {
+.nav__brand
+.nav__cta {
     text-transform: uppercase;
 }
 
-.navbar a {
+.nav__navbar .nav__navbar-link {
     font-size: 12px;
     padding-bottom: 3px;
 }
 
-.navbar-link {
+.nav__navbar-link {
     margin: 0 20px;
 }
 
-.navbar a:hover {
+.nav__navbar .nav__navbar-link:hover {
     border-bottom: 2px solid #262626;
 }
 
-.cta {
+.nav__cta {
     font-family: 'Roboto';
     text-transform: capitalize;
     display: inline-block;
@@ -113,181 +118,85 @@ a ,
     margin-right: 30px;
     font-size: 10px;
     width: 100px;
+    border: none;
 }
 
-.cta:hover {
+.nav__cta:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
-/* section Satu */
-
-.satu {
-    display: grid;
-    grid-template-columns: 1fr 1.30fr;
-    width: 100%;
-    overflow: hidden;
+/* modifier */
+.nav--black {
+    background: black;
+    color: white;
 }
 
-.contentLeft {
-    background: #262626;
+.nav--black .nav__cta {
+    color: black;
+    background: white;
+}
+
+.nav--black .nav__navbar-link {
+    color: white;
+}
+
+/* HERO
+================== */
+.hero {
     display: flex;
     min-height: 500px;
+    background: black;
+    color: white;
+}
+
+.hero.hero--background-gray {
+    background: gray;
+}
+
+.hero.hero--content-right .hero__description {
+    order: 2;
+}
+
+.hero.hero--content-right .hero__image {
+    order: 1;
+}
+
+.hero__description {
+    flex-basis: 45%;
+    display: flex;
     align-items: center;
+    order: 1;
 }
 
-.contentLeft__description {
-    border-left: 2px solid pink;
-    padding: 100px;
+.hero__image {
+    flex-basis: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
 }
 
-.contentLeft__description p, 
-.contentLeft__description a {
+.hero__description-wrapper {
+    border-left: 2px solid red;
+    padding: 30px;
+}
+
+.hero__description h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero__description p {
+    margin-bottom: 20px;
+}
+
+.hero__description .hero__cta {
     color: white;
-    margin: 10px 0;
 }
 
-.contentLeft__description a {
-    font-size: 10px;
-    cursor: pointer;
-    padding-bottom: 3px;
-}
-
-.contentLeft__description a:hover {
-    border-bottom: 1px solid #fff;
-}
-
-.contentLeft__description p {
-    font-size: 12px;
-    font-weight: 200;
-    padding-bottom: 50px;
-}
-
-.contentRight {
-    width: 100%;
-    height: 500px;
-}
-
-.contentRight img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -100px;
-    width: 100%;
-    height: auto;
-}
-
-.contentLeft h2 {
-    color: white;
-    text-transform: uppercase;
-    width: 300px;
-    font-weight: 300;
-}
-
-/* section dua */
-.dua {
-    display: grid;
-    grid-template-columns: 1.30fr 1fr;
-    width: 100%;
-    height: 400px;
-}
-
-.contentDuaLeft {
-    width: 100%;
-    height: 500px;
-}
-
-.contentDuaLeft img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.contentDuaRight {
-    background: burlywood;
-    justify-content: center;
-    padding: 100px;
-    color: #262626;
-}
-
-.contentDuaRight h2,
-.contentDuaRight p,
-.contentDuaRight a {
-    color: #fff;
-    margin: 5px;
-}
-
-.contentDuaRight h2 {
-    font-size: 30px;
-    font-weight: 300;
-    width: 250px;
-}
-
-.contentDuaRight p {
-    font-size: 12px;
-    padding-bottom: 50px;
-}
-
-.contentDuaRight a {
-    font-size: 10px;
-    padding-bottom: 2px;
-}
-
-.contentDuaRight a:hover {
-    border-bottom: 1px solid #262626;
-}
-
-/* Section Tiga */
-.tiga {
-    display: grid;
-    grid-template-columns: 1fr 1.30fr;
-    width: 100%;
-    height: 400px;
-}
-
-.contentTigaLeft {
-    background: #262626;
-    padding: 100px;
-    color: #fff;
-}
-
-.contentTigaLeft h2,
-.contentTigaLeft p ,
-.contentTigaLeft a{
-    margin: 5px;
-}
-
-.contentTigaLeft h2 {
-    font-size: 25px;
-    font-weight: 300;
-}
-
-.contentTigaLeft p {
-    font-size: 12px;
-    font-weight: 200;
-    margin-bottom: 50px;
-}
-
-.contentTigaLeft a {
-    color: #fff;
-    font-size: 10px;
-    font-weight: 100;
-    padding-bottom: 2px;
-}
-
-.contentTigaLeft a:hover {
-    border-bottom: 2px solid #fff;
-}
-
-.contentTigaRight {
-    width: 100%;
-    height: 500px;
-}
-
-.contentTigaRight img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.hero__cta:hover {
+    border-bottom: 1px solid white;
 }
 
 /* card */
