@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <!-- Implementasi BEM -->
+
+    <!-- navigasi -->
     <div class="nav">
         <div class="nav__container">
             <a href="#" class="nav__brand">
@@ -28,11 +32,11 @@
 
     <!-- section 1 -->
     <section class="hero">
-        <div class="hero__description">
-            <div class="hero__description-wrapper">
-                <h2>create and share your foto stories</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi maxime minus dolor rerum voluptatum amet debitis aspernatur quas illo, consequuntur cupiditate odio corporis hic eius optio impedit, ab soluta?</p>
-                <a class="hero__cta" href="#">get an invite <i class="fas fa-angle-right"></i></a>
+        <div class="hero__description border--left bg--black">
+            <div class="hero__description-wrapper bg--black">
+                <h2 class="hero__headline">create and share your foto stories</h2>
+                <p class="hero__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi maxime minus dolor rerum voluptatum amet debitis aspernatur quas illo, consequuntur cupiditate odio corporis hic eius optio impedit, ab soluta?</p>
+                <a class="hero__cta hero__cta--onpointer" href="#">View The Story <i class="fas fa-angle-right border--white"></i></a>
             </div>
         </div>
         <div class="hero__image" style="background-image: url('./img/pt1.jpg')">
@@ -40,94 +44,110 @@
     </section>
 
     <!-- section 2 -->
-    <section class="hero hero--content-right hero--background-gray">
-        <div class="hero__description">
+    <section class="hero hero--content-right">
+        <div class="hero__description text--black">
             <div class="hero__description-wrapper">
-                <h2>create and share your foto stories</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi maxime minus dolor rerum voluptatum amet debitis aspernatur quas illo, consequuntur cupiditate odio corporis hic eius optio impedit, ab soluta?</p>
-                <a class="hero__cta" href="#">get an invite <i class="fas fa-angle-right"></i></a>
+                <h2 class="hero__headline">create and share your foto stories</h2>
+                <p class="hero__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi maxime minus dolor rerum voluptatum amet debitis aspernatur quas illo, consequuntur cupiditate odio corporis hic eius optio impedit, ab soluta?</p>
+                <a class="hero__cta hero__cta--onpointer text--black" href="#">View The Story <i class="fas fa-angle-right border--black"></i></a>
             </div>
         </div>
-        <div class="hero__image" style="background-image: url('./img/pt1.jpg')">
+        <div class="hero__image" style="background-image: url('./img/pt2.jpg')">
         </div>
     </section>
 
     <!-- section 3 -->
     <section class="hero">
-        <div class="hero__description">
+        <div class="hero__description text--black">
             <div class="hero__description-wrapper">
-                <h2>create and share your foto stories</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi maxime minus dolor rerum voluptatum amet debitis aspernatur quas illo, consequuntur cupiditate odio corporis hic eius optio impedit, ab soluta?</p>
-                <a class="hero__cta" href="#">get an invite <i class="fas fa-angle-right"></i></a>
+                <h2 class="hero__headline">create and share your foto stories</h2>
+                <p class="hero__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci animi maxime minus dolor rerum voluptatum amet debitis aspernatur quas illo, consequuntur cupiditate odio corporis hic eius optio impedit, ab soluta?</p>
+                <a class="hero__cta hero__cta--onpointer text--black" href="#">View The Story <i class="fas fa-angle-right border--black"></i></a>
             </div>
         </div>
-        <div class="hero__image" style="background-image: url('./img/pt1.jpg')">
+        <div class="hero__image" style="background-image: url('./img/pt3.jpg')">
         </div>
     </section>
 
-    
+    <!-- cards -->
 
-    <section class="cards">
-        <div class="cardsSatu img">
-            <h2>The Mountain</h2>
-            <p>By Jhon Applies</p>
-            <a href="#">Read Story</a>
+    <section class="card">
+        <div class="card__description" style="background-image: url('./img/card1.jpg');">
+            <h2 class="card__text card__text--headline">Minimalist Garage</h2>
+            <p class="card__text card__text--space">By Shendy Pratama</p>
+            <a href="#" class="card__link card__text card__actived">Read More<i class="fas fa-angle-right card--white"></i></a>
         </div>
-        <div class="cardsDua">
-            <h2>The Mountain</h2>
-            <p>By Jhon Applies</p>
-            <a href="#">Read Story</a>
+        <div class="card__description" style="background-image: url('./img/card2.jpg');">
+            <h2 class="card__text card__text--headline">18 Days Voyage</h2>
+            <p class="card__text card__text--space">By Shendy Pratama</p>
+            <a href="#" class="card__link card__text card__actived">Read More<i class="fas fa-angle-right card--white"></i></a>
         </div>
-        <div class="cardsTiga">
-            <h2>The Mountain</h2>
-            <p>By Jhon Applies</p>
-            <a href="#">Read Story</a>
+        <div class="card__description" style="background-image: url('./img/card3.jpg');">
+            <h2 class="card__text card__text--headline">Architectural</h2>
+            <p class="card__text card__text--space">By Shendy Pratama</p>
+            <a href="#" class="card__link card__text card__actived">Read More<i class="fas fa-angle-right card--white"></i></a>
         </div>
-        <div class="cardsEmpat">
-            <h2>The Mountain</h2>
-            <p>By Jhon Applies</p>
-            <a href="#">Read Story</a>
+        <div class="card__description" style="background-image: url('./img/card4.jpg');">
+            <h2 class="card__text card__text--headline">Poeple Walking</h2>
+            <p class="card__text card__text--space">By Shendy Pratama</p>
+            <a href="#" class="card__link card__text card__actived">Read More <i class="fas fa-angle-right card--white"></i></a>
         </div>
     </section>
+
+    <!-- items -->
 
     <section class="items">
-        <div class="itemSatu itm">
-            <a href="#"><i class="fas fa-desktop"></i></a>
-            <h2>100% Responsive</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos molestiae libero rerum error quis deserunt commodi, aut quod cumque minus.</p>
-        </div>
-        <div class="itemSatu itm">
-            <a href="#"><i class="fas fa-photo-video"></i></a>
-            <h2>No Photo Limited</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos molestiae libero rerum error quis deserunt commodi, aut quod cumque minus.</p>
-        </div>
-        <div class="itemSatu itm">
-            <a href="#"><i class="fas fa-link"></i></a>
-            <h2>Available To Ebeded</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos molestiae libero rerum error quis deserunt commodi, aut quod cumque minus.</p>
+        <div class="items__wrapper">
+            <div class="items__description">
+                <span><i class="fas fa-desktop fa-5x"></i></span>
+                <h2 class="items__text items__headlines">100% Responsive</h2>
+                <p class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem similique, consequatur, blanditiis fugit quod eaque iusto aspernatur</p>
+            </div>
+            <div class="items__description">
+                <span><i class="fas fa-upload fa-5x"></i></span>
+                <h2 class="items__text items__headlines">No Photo Upload Limited</h2>
+                <p class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem similique, consequatur, blanditiis fugit quod eaque iusto aspernatur porro </p>
+            </div>
+            <div class="items__description">
+                <span><i class="fas fa-link fa-5x"></i></span>
+                <h2 class="items__text items__headlines">Available to Embed</h2>
+                <p class="items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem similique, consequatur, blanditiis fugit quod eaque iusto aspernatur porro </p>
+            </div>
         </div>
     </section>
 
+    <!-- end items -->
+    
+    <!-- footer -->
+
     <footer class="footer">
-        <div class="innerfooter">
-            <h2>Logo</h2>
-            <ul class="listLeft">
-                <li><a href="#" id="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#" id="#"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="#" id="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#" id="#"><i class="fab fa-linkedin"></i></a></li>
+        <div class="footer__inner">
+            <h2 class="footer__headline">Logo</h2>
+            <ul class="footer__list footer__left">
+                <li><a href="#" class="footer__link--hover"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="#" class="footer__link--hover"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                <li><a href="#" class="footer__link--hover"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="#" class="footer__link--hover"><i class="fab fa-pinterest-square fa-2x"></i></a></li>
+                <li><a href="#" class="footer__link--hover"><i class="fab fa-instagram-square fa-2x"></i></a></li>
             </ul>
-            <ul class="listCenter">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Story</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
+
+            <ul class="footer__list footer__center">
+                <li><a href="#" class="footer--text footer__link--border">Home</a></li>
+                <li><a href="#" class="footer--text footer__link--border">Stories</a></li>
+                <li><a href="#" class="footer--text footer__link--border">Features</a></li>
+                <li><a href="#" class="footer--text footer__link--border">Pricing</a></li>
             </ul>
-            <ul class="listRight">
-                <li><a href="#" class="cpy">Get an Invite <i class="fas fa-angle-right"></i></a></li>
-                <li><a href="#">Copy Right &#174 2020</a></li>
+
+            <ul class="footer__list footer__right">
+                <li><a href="#" class="footer--text footer__invite footer__pointer">Get an invite</a></li>
+                <li><i class="fas fa-angle-right footer--border white--arrow footer__link--hover"></i></li>
+                <li class="footer--text footer__copy">CopyRight &#169; 2020 All Right Reserved</li>
             </ul>
+
         </div>
     </footer>
+
+    <!-- end footer -->
+
 </body>
 </html>
