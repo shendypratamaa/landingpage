@@ -83,9 +83,10 @@ img {
     margin-left: 30px;
     cursor: pointer;
     font-size: 25px;
+    font-weight: 500;
 }
 
-.nav__brand
+.nav__brand, 
 .nav__cta {
     text-transform: uppercase;
 }
@@ -97,7 +98,8 @@ img {
 
 .nav__navbar-link {
     margin: 0 20px;
-    font-size: 14px !important;
+    font-size: 11px !important;
+    text-transform: uppercase;
 }
 
 .nav__navbar .nav__navbar-link:hover {
