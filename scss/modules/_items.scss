@@ -1,0 +1,44 @@
+@import 'mixin';
+@import 'abstrac';
+
+.items {
+    width: 100%;
+    min-height: 400px;
+    background: white;
+    display: flex;
+    align-items: center;
+    font-family: $primary-font;
+
+    &__wrapper {
+        padding: 50px;
+        display: flex;
+    }
+
+    
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        padding: 5px;
+        font-weight: 300;
+        text-align: center;
+        font-size: 14px;
+        color: #262626;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        &--headline {
+            font-size: 25px !important;
+            font-weight: 300 !important;
+            letter-spacing: 0em !important;
+            padding: 10px 0;
+        }
+    }
+
+    .fa-5x {
+        color: #262626;
+        padding: 10px;
+    }
+}

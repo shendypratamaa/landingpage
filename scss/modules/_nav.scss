@@ -1,0 +1,41 @@
+@import 'mixin';
+@import 'abstrac';
+
+.nav {
+    width: 100%;
+    max-width: 1670px;
+    font-family: $primary-font;
+    padding: 25px;
+    text-transform: uppercase;
+
+    &__container {
+        @include flex-box(center, space-around);  
+    }
+
+    &__brand {
+        font-size: 2rem;
+        color: $text-color;
+    }
+
+    &__navbar-link {
+        margin-left: 20px;
+        color: $text-color;
+        font-size: 14px;
+        letter-spacing: 2px;
+        &__navbar-link:hover {
+            border-bottom: 1px thin $text-color;
+            padding-bottom: 3px;
+        }
+    }
+
+    &__cta {
+        background-color: black;
+        color: #fff;
+        padding: 10px 30px 10px 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        &__cta:hover{
+            opacity: 0.6;
+        } 
+    }
+}
