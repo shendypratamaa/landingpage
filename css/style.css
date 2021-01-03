@@ -62,8 +62,7 @@ img {
     width: 100%;
 }
 
-/* main navigation
-========================== */
+/* navigation */
 .nav {
     background: #fff;
     padding: 20px;
@@ -125,6 +124,7 @@ img {
     opacity: 0.8;
     cursor: pointer;
 }
+/* end navigation */
 
 /* modifier */
 .nav--black {
@@ -141,37 +141,47 @@ img {
     color: white;
 }
 
-/* HERO
-================== */
+.text--white {
+    color: #fff;
+}
+
+.bg--black {
+    background: black;
+}
+
+/* section 1,2,3 hero */
 .hero {
     display: flex;
     min-height: 400px;
     background: #fff;
-    color: #fff;
+    color: black;
 }
 
-.hero.hero--content-right .hero__description {
-    order: 2;
-}
-
-.hero.hero--content-right .hero__image {
-    order: 1;
-}
-
-.hero__description {
+.hero__content {
     flex-basis: 45%;
     display: flex;
     align-items: center;
-    order: 1;
-    position: relative;
+    flex: 1;
 }
+
+.hero__image {
+    flex-basis: 55%;
+    background-repeat: no-repeat;
+    background-position-y: -25px;
+    background-size: cover;
+    order: 2;
+}
+
+.hero__content--right {
+    flex-direction: row-reverse;
+}
+
 
 .hero__headline {
     font-size: 2rem;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-
 
 .hero__text {
     font-size: 12px;
@@ -187,15 +197,6 @@ img {
     font-weight: 400;
 }
 
-
-.bg--black {
-    background: black;
-}
-
-.text--black {
-    color: black !important;
-}
-
 .border--left::after {
     position: absolute;
     content: '';
@@ -204,52 +205,12 @@ img {
     background: linear-gradient(blue,pink);
 }
 
-.hero__image {
-    flex-basis: 55%;
-    background-repeat: no-repeat;
-    background-position-y: -25px;
-    background-size: cover;
-    order: 2;
-}
-
 .hero__description-wrapper {
     padding: 70px;
 }
 
-.hero__description .hero__cta {
-    color: white;
-}
-
-.hero__cta--onpointer:hover {
-    opacity: 0.8;
-}
-
-.hero__cta .fa-angle-right {
-    margin-left: 150px;
-}
-
-.fa-angle-right {
-    position: relative;
-}
-
-.border--white::after {
-    position: absolute;
-    content: '';
-    top: 6px;
-    left: -96px;
-    width: 100px;
-    height: 2px;
-    background: #fff;
-}
-
-.border--black::after{
-    position: absolute;
-    content:'';
-    top: 6px;
-    left: -96px;
-    width: 100px;
-    height: 2px;
-    background: black;
+.hero__cta:hover {
+    opacity: 0.7;
 }
 
 /* cards */
@@ -304,21 +265,9 @@ img {
 .card__description .fa-angle-right {
     margin-left: 210px;
 }
-
-.card--white::after {
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: -46px;
-    width: 50px;
-    height: 1px;
-    background: #fff;
-}
-
 /* end card */
 
 /* items */
-
 .items {
     width: 100%;
     min-height: 400px;
@@ -359,17 +308,16 @@ img {
     color: #262626;
     padding: 10px;
 }
-
 /* end items */
 
 
 /* footer */
-
 .footer {
     max-width: 100%;
     min-height: 250px;
     margin: auto;
     background: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer__inner {
@@ -381,7 +329,6 @@ img {
 
 .footer__headline {
     justify-self: center;
-    font-family: 'roboto', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 500;
@@ -417,41 +364,24 @@ img {
 }
 
 .footer__invite {
-    position: absolute;
-    left: 130px;
-}
-
-.footer--border::after {
-    position: absolute;
-    content: '';
-    width: 50px;
-    height: .08em;
-    top: 7px;
-    right:  4px;
-    background: #fff;
-    display: block;
-}
-
-.white--arrow {
-    color: #fff;
-    margin-right: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .08em;
 }
 
 .footer__copy {
     padding-top: 130px;
     color: #727272 !important;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
-
-.footer__link--hover:hover {
-   opacity: 0.5;
+.fab:hover {
+    opacity: 0.6;
 }
-
-.footer__link--border:hover {
-    padding-bottom: 6px;
-    border-bottom: 1px solid #fff;
-    opacity: 0.8;
-}
-
 
 .fa-2x {
     color: #fff;
@@ -465,6 +395,9 @@ img {
     text-transform: uppercase;
 }
 
-
-
+.footer--text:hover {
+    opacity: 0.7;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #fff;
+}
 /* end footer */
