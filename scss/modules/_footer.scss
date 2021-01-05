@@ -7,26 +7,57 @@
     margin: auto;
     background: black;
     font-family: $primary-font;
+
+    @include breakpoint(mobile){
+        padding: 20px 30px 20px 30px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
     
     &__inner {
         display: flex;
         padding: 50px 70px 70px 70px;
         justify-content: space-between;
         position: relative;
+
+        @include breakpoint(mobile){
+            padding: 0;
+            justify-content: center;
+            flex-direction: column;
+            position: static;
+        }
     }
 
     &__headline {
-        justify-self: center;
-        font-size: 25px;
+        font-family: $primary-font;
+        font-size: 30px;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 700;
         color: #fff;
+
+        @include breakpoint(mobile){
+             display: flex;
+             justify-content: center;
+             padding: 20px;
+             letter-spacing: 3px;
+        }
     }
 
     &__list {
         display: flex;
+        padding: 0;
+        
+        @include breakpoint(tablet) {
+            font-size: 12px;
+        }
+
         li {
             margin: 0 5px;
+
+            @include breakpoint(mobile){
+                text-align: center;
+            }
         }
     }
     
@@ -34,12 +65,40 @@
         flex: 1;
         position: absolute;
         top: 180px;
+        
+        @include breakpoint(tablet){
+           
+        }
+
+        @include breakpoint(mobile){
+            position: static;
+            justify-content: center;
+        }
     }
     
     &__center {
         flex-direction: column;
+
+        @include breakpoint(tablet){
+            font-size: 11px;
+            flex-direction: row;
+            position: absolute;
+            top: 105px;
+        }
+
+        @include breakpoint(mobile){
+            flex-direction: column;
+            position: static;
+            justify-content: center;
+            margin-top: 40px;
+            font-size: 12px;
+        }
+
         li {
         margin: 0 0 30px 0;
+            @include breakpoint(mobile){
+                margin-bottom: 20px;
+            }
         }
     }
     
@@ -47,6 +106,11 @@
         flex-direction: column;
         text-align: right;
         position: relative;
+
+        @include breakpoint(mobile){
+            position: static;
+            margin-top: 112px;
+        }
     }
     
     &__invite {
@@ -58,9 +122,30 @@
         position: absolute;
         top: 0;
         left: 170px;
+
+        @include breakpoint(tablet){
+            left:150px;
+        }
+
+        @include breakpoint(mobile){
+            position: static;
+            margin: 0;
+        }
+        
+
         &--link {
             color: #fff;
             text-transform: uppercase;
+
+            @include breakpoint(tablet){
+                margin-right: 20px;
+                letter-spacing: 2px;
+            }
+
+            @include breakpoint(mobile){
+                margin: 0;
+            }
+
             &:hover  {
                 opacity: 0.7;
                 padding-bottom: 6px;
@@ -80,13 +165,16 @@
     
     &__copy {
         padding-top: 130px;
-        color: #727272 !important;
+        color: #727272;
         font-size: 14px;
         font-weight: 200;
         letter-spacing: .1em;
-        text-transform: uppercase;
+        text-transform: capitalize;
+
+        @include breakpoint(mobile){
+            padding-top: 30px;
+        }
     }
-    
     .fa-2x {
         color: #fff;
         .fab:hover {
