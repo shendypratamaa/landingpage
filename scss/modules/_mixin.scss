@@ -1,0 +1,26 @@
+@mixin flex-box($direction:row, $js-content: row){
+    display: flex;
+    justify-content: $js-content;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// breakpoint 
+
+@mixin breakpoint($point){
+    @if $point == mobile {
+        @media screen and(max-width: 700px){@content;}
+    }
+    @else if $point == tabletS {
+        @media screen and(max-width: 768px){@content;}
+    }
+    @else if $point == tablet {
+        @media screen and(max-width: 1024px){@content;}
+    }
+    @else if $point == laptop {
+        @media screen and(max-width: 1440px){@content;}
+    }
+    @else if $point == desktop {
+        @media screen and(min-width: 1824px){@content;}
+    }
+}

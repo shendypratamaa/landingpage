@@ -1,0 +1,93 @@
+@import 'mixin';
+@import 'abstrac';
+
+.items {
+    @include flex-box(center, row);
+    width: 100%;
+    min-height: 400px;
+    background: white;
+    font-family: $primary-font;
+
+    &__wrapper {
+        padding: 50px 50px 70px 50px;
+        display: flex;
+        flex-direction: row;
+
+        @include breakpoint(tablet){
+            flex-direction: column;
+        }
+
+        @include breakpoint(mobile){
+            text-align: center;
+            min-height: 100vh;
+            padding-bottom: 80px;
+        }
+        
+    }
+    
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include breakpoint(tablet){
+            padding: 20px 50px;
+        }
+
+        @include breakpoint(mobile){
+            padding: 0;
+            margin: 10px 0 70px 0;
+        }
+    }
+
+    &__text {
+        padding: 5px;
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+        color: #858585;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+
+        @include breakpoint(tablet){
+            height: 12vh;
+            font-size: 20px;
+        }
+
+        @include breakpoint(tabletS){
+            font-size: 15px;
+        }
+
+        &--headline {
+            color: #262626;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 0em;
+            padding: 10px 0;
+        }
+
+        @include breakpoint(tablesS) {
+            font-size: 20px;
+        }
+
+        @include breakpoint(mobile) {
+            font-size: 15px;
+            text-align: center;
+        }
+
+    }
+
+    .fa-5x {
+        color: #262626;
+        padding: 10px;
+
+        @include breakpoint(tablet){
+            font-size: 9rem;
+            padding: 25px;
+        }
+
+        @include breakpoint(tabletS){
+            font-size: 5rem;
+        }
+    }
+}
